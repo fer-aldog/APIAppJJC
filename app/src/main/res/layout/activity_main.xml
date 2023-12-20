@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API Currency Converter"
+        android:textSize="35dp"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50.5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/currency1title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency 1"
+            android:textSize="27dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" to "
+            android:textSize="27dp"/>
+
+        <TextView
+            android:id="@+id/currency2title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency 2"
+            android:textSize="27dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="as of: "
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/datetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YYYY-MM-DD"
+            android:textSize="22dp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/curr1amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="currency 1 amount:"
+                android:textSize="19dp"/>
+            <TextView
+                android:id="@+id/amountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="17dp"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/curr2amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="currency 2 amount:"
+                android:textSize="19dp"/>
+            <TextView
+                android:id="@+id/ratesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="17dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50.5dp"/>
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="37.5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from this currency:"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/currency1ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="example: GBP"
+                android:textSize="16dp"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="amount to convert:"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/amountET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="example: 50"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to this currency:"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/currency2ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="example: USD"
+                android:textSize="16dp"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date of rates:"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/dateOfRateET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="YYYY-MM-DD"
+                android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"/>
+
+    <Button
+        android:id="@+id/submitBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        app:backgroundTint="#5A5A5A"
+        app:cornerRadius="4sp" />
+
+
+</LinearLayout>
